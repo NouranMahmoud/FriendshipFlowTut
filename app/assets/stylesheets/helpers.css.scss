@@ -1,0 +1,267 @@
+//
+// We uses theses helpers extensivly through in the project for common styles
+// This makes stle consistent and the important thing is that we don't need to write more css :)
+//
+$green: #00c600;
+$red: #FF6B52;
+$white: #fff;
+$text-gray: #a2a2a2;
+$bg-gray: #FAFAFA;
+$border-gray: #f0f0f0;
+
+// Page width
+$page-width: 1000;
+
+// Radius
+$radius: 6px;
+
+$base-space-unit: 1.5em;
+
+.ell { overflow: hidden !important; }
+.clear { clear: both }
+
+.glassy-bg { background-color: rgba(0, 0, 0, 0.2) }
+.primary-bg { background-color: #B18806}
+
+
+// Displays
+.block { display: block }
+.none { display: none }
+.inline-block { display: inline-block }
+
+// Typography
+.fonty { font-family: 'Signika', sans-serif }
+.bold { font-weight: 600 }
+.light { font-weight: 200 }
+
+
+.radius-box {
+  border-radius: 10px;
+}
+
+.radius-ls {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.radius-rs {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.radius-l1 {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.radius-r1 {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+// Margin helpers
+.m0            { margin: 0 !important }
+.mt0           { margin-top: 0 !important }
+.mr0           { margin-right: 0 !important }
+.mb0           { margin-bottom: 0 !important}
+.ml0           { margin-left: 0 !important }
+
+.ms            { margin: .25em !important }
+.mts           { margin-top: .25em }
+.mbs           { margin-bottom: .25em !important }
+.mrs           { margin-right: .25em !important }
+.mls           { margin-left: .25em !important }
+
+.mm            { margin: .5em !important }
+.mtm           { margin-top: .5em !important }
+.mbm           { margin-bottom: .5em !important }
+.mrm           { margin-right: .5em !important }
+.mlm           { margin-left: .5em !important }
+
+.ml            { margin: 1em !important }
+.mtl           { margin-top: 1em !important }
+.mbl           { margin-bottom: 1em !important }
+.mrl           { margin-right: 1em !important }
+.mll           { margin-left: 1em !important }
+
+.m1            { margin: $base-space-unit }
+.mt1           { margin-top: $base-space-unit }
+.mb1           { margin-bottom: $base-space-unit }
+.mr1           { margin-right: $base-space-unit }
+.ml1           { margin-left: $base-space-unit }
+
+.m2            { margin: $base-space-unit*2 }
+.mt2           { margin-top: $base-space-unit*2 }
+.mb2           { margin-bottom: $base-space-unit*2 }
+.mr2           { margin-right: $base-space-unit*2 }
+.ml2           { margin-left: $base-space-unit*2 }
+
+// Padding helpers
+.p0            { padding: 0 !important }
+.pt0           { padding-top: 0 !important }
+.pr0           { padding-right: 0 !important }
+.pb0           { padding-bottom: 0 !important }
+.pl0           { padding-left: 0 !important }
+
+.ps            { padding: .25em !important }
+.pts           { padding-top: .25em !important }
+.pbs           { padding-bottom: .25em !important }
+.prs           { padding-right: .25em !important }
+.pls           { padding-left: .25em !important }
+
+.pm            { padding: .5em !important }
+.ptm           { padding-top: .5em !important }
+.pbm           { padding-bottom: .5em !important }
+.prm           { padding-right: .5em !important }
+.plm           { padding-left: .5em !important }
+
+.p1            { padding: 1em !important }
+.pt1           { padding-top: 1em !important }
+.pr1           { padding-right: 1em !important }
+.pb1           { padding-bottom: 1em !important }
+.pl1           { padding-left: 1em !important }
+
+.p2            { padding: 1em*2 !important }
+.pt2           { padding-top: 1em*2 !important }
+.pr2           { padding-right: 1em*2 !important }
+.pb2           { padding-bottom: 1em*2 !important }
+.pl2           { padding-left: 1em*2 !important }
+
+// Padding small
+.pads           { padding: .25em }
+
+// Padding medium
+.padm           { padding: .5em }
+
+// Padding large
+.padl           { padding: 1em }
+
+// Padding small left :: right
+.padsx {
+ padding-left: .25em;
+ padding-right: .25em;
+}
+
+// Padding medium left :: right
+.padmx {
+ padding-left: .5em;
+ padding-right: .5em;
+}
+
+// Padding large left :: right
+.padlx {
+ padding-left: 1em;
+ padding-right: 1em;
+}
+
+// Padding small top :: bottom
+.padsy {
+ padding-top: .25em;
+ padding-bottom: .25em;
+}
+
+// Padding medium top :: bottom
+.padmy {
+ padding-top: .5em;
+ padding-bottom: .5em;
+}
+
+// Padding large top :: bottom
+.padly {
+ padding-top: 1em;
+ padding-bottom: 1em;
+}
+
+// System fonts size
+.font-large {
+  font-size: 1.5em;
+}
+.font-normal {
+  font-size: 0.9em;
+}
+.font-small {
+  font-size: 0.7em;
+}
+
+// Footer links
+.inline-block {
+  display: inline-block !important;
+}
+
+.no-float {
+  float: none !important;
+}
+
+// System official colors
+.green {
+  color: $green;
+}
+.gray {
+  color: $text-gray;
+}
+.white {
+  color: $white;
+}
+.red {
+  color: $red;
+}
+.active {
+  color: $green !important;
+}
+
+// Borders
+.border {
+  border: solid 1px $border-gray;
+}
+.border-top {
+  border-top: solid 1px $border-gray;
+}
+.border-bottom {
+  border-bottom: solid 1px $border-gray;
+}
+.border-left {
+  border-left: solid 1px $border-gray;
+}
+.border-right {
+  border-right: solid 1px $border-gray;
+}
+
+// Backgrounds
+.glassy-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+  @extend .radius;
+}
+.white-bg {
+  background-color: #fff;
+  @extend .radius, .border;
+}
+
+// Radius borders
+.radius {
+  border-radius: $radius !important;
+}
+.radius-bottom {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+.radius-top {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+}
+.radius-left {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+.radius-right {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+.un-radius-top-right{
+  border-top-right-radius: 0 !important;
+}

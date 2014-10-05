@@ -1,0 +1,33 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Main
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#content {
+  padding-bottom: 80px;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+.center{
+  margin: 0 auto;
+  text-align: center;
+  height: 90px;
+}
+.element-center{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

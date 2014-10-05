@@ -11,9 +11,12 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
-
+# Use devise for authentications
+gem 'devise', '~> 3.4.0'
+# Foundation for generating styles
+gem 'foundation-rails', '~> 5.4.5.0'
+# Workflow for creating states, events and transitions
+gem 'workflow', '~> 1.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
