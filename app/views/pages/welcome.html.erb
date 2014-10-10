@@ -1,5 +1,15 @@
 <div class="row">
   <div class="center">
-    <%=link_to "sign in", new_user_session_path, class: "button small element-center" %>  <%=link_to "sign out", new_user_registration_path, class: "button  secondary small element-center"%>
+    <%=link_to "sign in", new_user_session_path, class: "button small element-center" %>  <%=link_to "sign up", new_user_registration_path, class: "button  secondary small element-center"%>
   </div>
 </div>
+
+<style>
+  body{
+   background: url('<%=image_path("home/#{Random.rand(1..2)}.jpg")%>') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+</style>
