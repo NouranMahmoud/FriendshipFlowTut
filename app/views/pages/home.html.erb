@@ -1,10 +1,21 @@
 <div class="row text-center">
-  <div class="large-12 columns">
+  <div class="large-6 columns">
     <h3> Welcome <%= @user.username %>, go to your profile <%= link_to "profile", root_path %> </h3>
     <h5>Here is a list of all the users</h5>
     <ul>
       <% for user in @users %>
-        <li><%= user.username%> <%=link_to "Add Friend", root_path unless user.id == current_user.id%></li>
+      <% #byebug %>
+        <% unless user.id == current_user.id #and current_user.friendships.friend.id == user.id %>
+          <li><%= user.username%> <%=link_to "Add Friend", friendships_path(friend_id: user.id), method: :post %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+  <div class="large-6 columns">
+    <h5>Your Friends</h5>
+    <ul>
+      <% for friendship in @user.friendships %>
+        <li><%= friendship.friend.username%> <%=link_to "Remove Friend", friendship_path(friendship.friend), method: :delete %></li>
       <% end %>
     </ul>
   </div>

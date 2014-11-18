@@ -16,7 +16,7 @@ gem 'devise', '~> 3.4.0'
 # Foundation for generating styles
 gem 'foundation-rails', '~> 5.4.5.0'
 # Workflow for creating states, events and transitions
-gem 'workflow', '~> 1.1.0'
+gem 'workflow', '~> 1.2.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -39,5 +39,4 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
-
+gem 'byebug', '~> 3.5.1', group: [:development, :test]
